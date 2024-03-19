@@ -13,4 +13,11 @@ numeros_texto = entrada.split(',')
 numeros = [int(numero) for numero in numeros_texto]
 
 # Imprimir la lista de números ingresados
-print("Lista de números ingresados:", numeros)
+#print("Lista de números ingresados:", numeros)
+
+#Imprimir lista deteniendo la operacion si el número es negativo
+for numero in numeros:
+    if numero < 0:
+        print("Número negativo - fin de la impresión")
+        break 
+    print(numero)
